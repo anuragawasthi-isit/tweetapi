@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace TwitterAPI.Models
 {
@@ -17,5 +19,8 @@ namespace TwitterAPI.Models
         public int TweetID { get; set; }
 
         public bool Likedflag { get; set; }
+
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string _id { get; set; }
     }
 }

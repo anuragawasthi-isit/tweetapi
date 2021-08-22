@@ -28,6 +28,10 @@ namespace TwitterApi
             services.AddControllers();
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();
+            services.AddCors(options => options.AddPolicy("AllowOrigin", p => p.AllowAnyOrigin()));
+            
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +53,8 @@ namespace TwitterApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Twitter API V1");
             });
 
+
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -59,6 +65,7 @@ namespace TwitterApi
             {
                 endpoints.MapControllers();
             });
-        }
+
+                    }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a_awasthi\\source\\repos\\TwitterApi\\TwitterApi\\TwitterApi.csproj": {}
+    "C:\\twitterapp\\tweetapiwithouthttp\\TwitterApi\\TwitterApi\\TwitterApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a_awasthi\\source\\repos\\TwitterApi\\TwitterApi\\TwitterApi.csproj": {
+    "C:\\twitterapp\\tweetapiwithouthttp\\TwitterApi\\TwitterApi\\TwitterApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a_awasthi\\source\\repos\\TwitterApi\\TwitterApi\\TwitterApi.csproj",
+        "projectUniqueName": "C:\\twitterapp\\tweetapiwithouthttp\\TwitterApi\\TwitterApi\\TwitterApi.csproj",
         "projectName": "TwitterApi",
-        "projectPath": "C:\\Users\\a_awasthi\\source\\repos\\TwitterApi\\TwitterApi\\TwitterApi.csproj",
+        "projectPath": "C:\\twitterapp\\tweetapiwithouthttp\\TwitterApi\\TwitterApi\\TwitterApi.csproj",
         "packagesPath": "C:\\Users\\a_awasthi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a_awasthi\\source\\repos\\TwitterApi\\TwitterApi\\obj\\",
+        "outputPath": "C:\\twitterapp\\tweetapiwithouthttp\\TwitterApi\\TwitterApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -46,7 +46,15 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.13.1, )"
+            },
             "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[6.1.4, )"
             }

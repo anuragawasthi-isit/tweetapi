@@ -29,9 +29,9 @@ namespace TwitterAPI.Controllers
 
         // GET api/<TweetController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public List<Tweet> Get(int id)
         {
-            return "value";
+            return repo.GetUserTweeets(id.ToString());// "value";
         }
 
         // POST api/<TweetController>
